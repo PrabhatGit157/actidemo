@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[TONY336]]>
+    </line>
+    <line>
+      <![CDATA[Are you sure you want to cancel the Type of Work creation?]]>
+    </line>
+    <line>
+      <![CDATA[Are you sure you want to cancel the Type of Work creation?]]>
+    </line>
+    <line>
+      <![CDATA[TONY168]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-06-26T11:33:07 IST" name="Suite" finished-at="2023-06-26T11:33:44 IST" duration-ms="36180">
+    <groups>
+      <group name="system">
+        <method signature="CustomerCreation.createCustomer()[pri:0, instance:Actitime.testscript.CustomerCreation@2f9f7dcf]" name="createCustomer" class="Actitime.testscript.CustomerCreation"/>
+        <method signature="CustomerCreation.createCustomer()[pri:0, instance:Actitime.testscript.CustomerCreation@765d7657]" name="createCustomer" class="Actitime.testscript.CustomerCreation"/>
+      </group> <!-- system -->
+      <group name="smoke">
+        <method signature="AlertHandling_work_excel.AlertHandle()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@9597028]" name="AlertHandle" class="Actitime.testscript.AlertHandling_work_excel"/>
+        <method signature="AlertHandling_work_excel.AlertHandle()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@443118b0]" name="AlertHandle" class="Actitime.testscript.AlertHandling_work_excel"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-06-26T11:33:07 IST" name="chrometest" finished-at="2023-06-26T11:33:27 IST" duration-ms="19137">
+      <class name="Actitime.testscript.CustomerCreation">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Actitime.testscript.CustomerCreation@2f9f7dcf]" started-at="2023-06-26T11:33:07 IST" name="launchBrowser" finished-at="2023-06-26T11:33:12 IST" duration-ms="4454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Actitime.testscript.CustomerCreation@2f9f7dcf]" started-at="2023-06-26T11:33:12 IST" name="login" finished-at="2023-06-26T11:33:18 IST" duration-ms="5809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createCustomer()[pri:0, instance:Actitime.testscript.CustomerCreation@2f9f7dcf]" started-at="2023-06-26T11:33:18 IST" name="createCustomer" finished-at="2023-06-26T11:33:25 IST" duration-ms="6983" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TONY336]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Actitime.testscript.CustomerCreation@2f9f7dcf]" started-at="2023-06-26T11:33:25 IST" name="logout" finished-at="2023-06-26T11:33:26 IST" duration-ms="1610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Actitime.testscript.CustomerCreation@2f9f7dcf]" started-at="2023-06-26T11:33:26 IST" name="closeBrowser" finished-at="2023-06-26T11:33:27 IST" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Actitime.testscript.CustomerCreation -->
+      <class name="Actitime.testscript.AlertHandling_work_excel">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@9597028]" started-at="2023-06-26T11:33:07 IST" name="launchBrowser" finished-at="2023-06-26T11:33:12 IST" duration-ms="4454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@9597028]" started-at="2023-06-26T11:33:12 IST" name="login" finished-at="2023-06-26T11:33:17 IST" duration-ms="5015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="AlertHandle()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@9597028]" started-at="2023-06-26T11:33:17 IST" name="AlertHandle" finished-at="2023-06-26T11:33:25 IST" duration-ms="8487" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Are you sure you want to cancel the Type of Work creation?]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AlertHandle -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@9597028]" started-at="2023-06-26T11:33:25 IST" name="logout" finished-at="2023-06-26T11:33:25 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@9597028]" started-at="2023-06-26T11:33:25 IST" name="closeBrowser" finished-at="2023-06-26T11:33:26 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Actitime.testscript.AlertHandling_work_excel -->
+    </test> <!-- chrometest -->
+    <test started-at="2023-06-26T11:33:27 IST" name="Edgetest" finished-at="2023-06-26T11:33:44 IST" duration-ms="17011">
+      <class name="Actitime.testscript.CustomerCreation">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Actitime.testscript.CustomerCreation@765d7657]" started-at="2023-06-26T11:33:27 IST" name="launchBrowser" finished-at="2023-06-26T11:33:30 IST" duration-ms="3383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Actitime.testscript.CustomerCreation@765d7657]" started-at="2023-06-26T11:33:30 IST" name="login" finished-at="2023-06-26T11:33:35 IST" duration-ms="5313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createCustomer()[pri:0, instance:Actitime.testscript.CustomerCreation@765d7657]" started-at="2023-06-26T11:33:35 IST" name="createCustomer" finished-at="2023-06-26T11:33:42 IST" duration-ms="6480" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TONY168]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Actitime.testscript.CustomerCreation@765d7657]" started-at="2023-06-26T11:33:42 IST" name="logout" finished-at="2023-06-26T11:33:43 IST" duration-ms="1588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Actitime.testscript.CustomerCreation@765d7657]" started-at="2023-06-26T11:33:43 IST" name="closeBrowser" finished-at="2023-06-26T11:33:44 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Actitime.testscript.CustomerCreation -->
+      <class name="Actitime.testscript.AlertHandling_work_excel">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@443118b0]" started-at="2023-06-26T11:33:27 IST" name="launchBrowser" finished-at="2023-06-26T11:33:28 IST" duration-ms="1268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@443118b0]" started-at="2023-06-26T11:33:28 IST" name="login" finished-at="2023-06-26T11:33:33 IST" duration-ms="4863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="AlertHandle()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@443118b0]" started-at="2023-06-26T11:33:33 IST" name="AlertHandle" finished-at="2023-06-26T11:33:41 IST" duration-ms="8261" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Are you sure you want to cancel the Type of Work creation?]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AlertHandle -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@443118b0]" started-at="2023-06-26T11:33:41 IST" name="logout" finished-at="2023-06-26T11:33:41 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Actitime.testscript.AlertHandling_work_excel@443118b0]" started-at="2023-06-26T11:33:41 IST" name="closeBrowser" finished-at="2023-06-26T11:33:41 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Actitime.testscript.AlertHandling_work_excel -->
+    </test> <!-- Edgetest -->
+  </suite> <!-- Suite -->
+</testng-results>
