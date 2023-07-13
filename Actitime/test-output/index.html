@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,8 +21,7 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
@@ -40,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\prabh\eclipse-workspace\Actitime\testngcross.xml</span>
+                    <span>C:\Users\prabh\git\repository3\Actitime\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,36 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Actitime.testscript.AlertHandling_work_excel" class="method navigator-link" hash-for-method="AlertHandle">AlertHandle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Actitime.testscript.AlertHandling_work_excel" class="method navigator-link" hash-for-method="AlertHandle">AlertHandle</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Actitime.testscript.DropdownHandle" class="method navigator-link" hash-for-method="DDhandle">DDhandle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Actitime.testscript.CustomerCreation" class="method navigator-link" hash-for-method="createCustomer">createCustomer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Actitime.testscript.CustomerCreation" class="method navigator-link" hash-for-method="createCustomer">createCustomer</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -134,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">Actitime.testscript.CustomerCreation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -145,20 +139,43 @@
                   <a name="createCustomer">
                   </a> <!-- createCustomer -->
                   <span class="method-name">createCustomer</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createCustomer">
-                  </a> <!-- createCustomer -->
-                  <span class="method-name">createCustomer</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
+in C:\Users\prabh\git\repository3\Actitime\testng.xml
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
+              <span class="class-name">Actitime.testscript.DropdownHandle</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DDhandle">
+                  </a> <!-- DDhandle -->
+                  <span class="method-name">DDhandle</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at Actitime.genericLib.BaseClass.login(BaseClass.java:53)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">Actitime.testscript.AlertHandling_work_excel</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -167,41 +184,34 @@
                   <a name="AlertHandle">
                   </a> <!-- AlertHandle -->
                   <span class="method-name">AlertHandle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="AlertHandle">
-                  </a> <!-- AlertHandle -->
-                  <span class="method-name">AlertHandle</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at Actitime.genericLib.BaseClass.login(BaseClass.java:53)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prabh\eclipse-workspace\Actitime\testngcross.xml</span>
+            <span class="header-content">C:\Users\prabh\git\repository3\Actitime\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;chrometest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Actitime.testscript.AlertHandling_work_excel&quot;/&gt;
       &lt;class name=&quot;Actitime.testscript.CustomerCreation&quot;/&gt;
+      &lt;class name=&quot;Actitime.testscript.DropdownHandle&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- chrometest --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Edgetest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Actitime.testscript.AlertHandling_work_excel&quot;/&gt;
-      &lt;class name=&quot;Actitime.testscript.CustomerCreation&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Edgetest --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,10 +223,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chrometest (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Edgetest (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,10 +240,18 @@
                 <span class="method-in-group-name">AlertHandle</span>
                 <br/>
               </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DDhandle</span>
+                <br/>
+              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">system</span>
               <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">DDhandle</span>
+                <br/>
+              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">createCustomer</span>
                 <br/>
@@ -258,28 +273,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AlertHandle')
-data.setCell(0, 2, 'Actitime.testscript.AlertHandling_work_excel')
-data.setCell(0, 3, 8487);
+data.setCell(0, 1, 'createCustomer')
+data.setCell(0, 2, 'Actitime.testscript.CustomerCreation')
+data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'AlertHandle')
-data.setCell(1, 2, 'Actitime.testscript.AlertHandling_work_excel')
-data.setCell(1, 3, 8261);
+data.setCell(1, 1, 'DDhandle')
+data.setCell(1, 2, 'Actitime.testscript.DropdownHandle')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createCustomer')
-data.setCell(2, 2, 'Actitime.testscript.CustomerCreation')
-data.setCell(2, 3, 6983);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createCustomer')
-data.setCell(3, 2, 'Actitime.testscript.CustomerCreation')
-data.setCell(3, 3, 6480);
+data.setCell(2, 1, 'AlertHandle')
+data.setCell(2, 2, 'Actitime.testscript.AlertHandling_work_excel')
+data.setCell(2, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -290,30 +301,6 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">createCustomer</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TONY336</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">AlertHandle</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Are you sure you want to cancel the Type of Work creation?</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">createCustomer</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TONY168</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">AlertHandle</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Are you sure you want to cancel the Type of Work creation?</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -329,122 +316,84 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.CustomerCreation</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">launchBrowser(chrome)</span>
+              <div class="chronological-class-name">Actitime.testscript.DropdownHandle</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.AlertHandling_work_excel</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">launchBrowser(chrome)</span>
+              <div class="chronological-class-name">Actitime.testscript.CustomerCreation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">4460 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.CustomerCreation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">4460 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Actitime.testscript.AlertHandling_work_excel</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">AlertHandle</span>
-                <span class="method-start">9475 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Actitime.testscript.DropdownHandle</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logout</span>
+                <span class="method-start">27 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Actitime.testscript.CustomerCreation</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">createCustomer</span>
-                <span class="method-start">10269 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">logout</span>
-                <span class="method-start">17254 ms</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Actitime.testscript.AlertHandling_work_excel</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">logout</span>
-                <span class="method-start">17964 ms</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Actitime.testscript.CustomerCreation</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">18054 ms</span>
+                <span class="method-start">70 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.CustomerCreation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Actitime.testscript.DropdownHandle</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">18864 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class before">
-                <span class="method-name">launchBrowser(Edge)</span>
-                <span class="method-start">19152 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.AlertHandling_work_excel</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">launchBrowser(Edge)</span>
-                <span class="method-start">19152 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">20421 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.CustomerCreation</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">22536 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.AlertHandling_work_excel</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">AlertHandle</span>
-                <span class="method-start">25285 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.CustomerCreation</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">createCustomer</span>
-                <span class="method-start">27849 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.AlertHandling_work_excel</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logout</span>
-                <span class="method-start">33548 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">33830 ms</span>
+                <span class="method-start">71 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Actitime.testscript.CustomerCreation</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">logout</span>
-                <span class="method-start">34332 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="chronological-class-name">Actitime.testscript.AlertHandling_work_excel</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">35920 ms</span>
+                <span class="method-start">72 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
