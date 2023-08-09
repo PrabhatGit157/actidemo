@@ -30,6 +30,4 @@ public class DataUtility
 		return value;
     }
 
-
-
 }
